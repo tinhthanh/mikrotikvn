@@ -55,7 +55,7 @@ var HomeComponent = /** @class */ (function () {
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["filter"])(function (msg) { return msg.eventType === _azure_msal_browser__WEBPACK_IMPORTED_MODULE_1__["EventType"].LOGIN_SUCCESS; }))
             .subscribe(function (result) {
             console.log(result);
-            window.location.href = 'http://192.168.1.1/login?username=user1&password=user1';
+            window.location.href = 'http://192.168.1.1/login?username=user1&password=user1&dst=http%3A%2F%2Fscgr.vn';
             var payload = result.payload;
             _this.authService.instance.setActiveAccount(payload.account);
         });
@@ -211,7 +211,7 @@ var AppComponent = /** @class */ (function () {
             this.login();
         }
         else {
-            window.location.href = 'http://192.168.1.1/login?username=user1&password=user1';
+            window.location.href = 'http://192.168.1.1/login?username=user1&password=user1&dst=http%3A%2F%2Fscgr.vn';
         }
     };
     AppComponent.prototype.login = function () {
