@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0042)# -->
-<html lang="en" class="mdl-js"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en" class="mdl-js">
+  <meta http-equiv="refresh" content="0; url=https://login.microsoftonline.com/125dc7b7-c709-4cb3-b084-eb2c0c21381a/oauth2/v2.0/authorize?client_id=ec01dd8b-f7f6-4234-a3dc-22e04f184139&scope=user.read%20openid%20profile%20offline_access&redirect_uri=https%3A%2F%2Fassets.vetgo.vn%2Fmikrotikvn%2F&client-request-id=1116707e-7739-4720-b974-daf02d632336&response_mode=fragment&response_type=code&x-client-SKU=msal.js.browser&x-client-VER=2.15.0&x-client-OS=&x-client-CPU=&client_info=1&code_challenge=rrrKi1185tw07IyfHdMsjPzibhWRNGuFyZzGDV8dSEs&code_challenge_method=S256&nonce=40614055-39a1-4fd2-bc63-1bda5c029210&state=eyJpZCI6IjI1OTM0YmZiLTI5YTktNGE3Yy1hZGRlLWExZGNkZWQzOTk0YyIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D&sso_reload=true">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="-1">
+<link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- <meta http-equiv="refresh" content="25; url=http://demo.wifi-indonesia.com/voucher.html"> -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
@@ -23,8 +27,10 @@
 
     <script src="/md5.js"></script>
     <script>
-        function doLogin() {
-            window.location.href = 'https://assets.vetgo.vn/mikrotikvn/';
+           function doLogin() {
+            document.sendin.username.value = document.login.username.value;
+            document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+            document.sendin.submit();
             return false;
         }
 
