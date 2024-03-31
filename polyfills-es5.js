@@ -4994,8 +4994,8 @@ module.exports = Object.setPrototypeOf || ('__proto__' in {} ? function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\ngocg\OneDrive\Documents\GitHub\ms-identity-javascript-angular-spa-main\node_modules\@angular-devkit\build-angular\src\webpack\es5-polyfills.js */"voQr");
-module.exports = __webpack_require__(/*! C:\Users\ngocg\OneDrive\Documents\GitHub\ms-identity-javascript-angular-spa-main\src\polyfills.ts */"hN/g");
+__webpack_require__(/*! /Users/thanhhuynh/Documents/GitHub/ms-identity-javascript-angular-spa-main/node_modules/@angular-devkit/build-angular/src/webpack/es5-polyfills.js */"voQr");
+module.exports = __webpack_require__(/*! /Users/thanhhuynh/Documents/GitHub/ms-identity-javascript-angular-spa-main/src/polyfills.ts */"hN/g");
 
 
 /***/ }),

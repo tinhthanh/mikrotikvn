@@ -5092,7 +5092,7 @@ $({ target: 'Reflect', stat: true, sham: !FREEZING }, {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\ngocg\OneDrive\Documents\GitHub\ms-identity-javascript-angular-spa-main\src\polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! /Users/thanhhuynh/Documents/GitHub/ms-identity-javascript-angular-spa-main/src/polyfills.ts */"hN/g");
 
 
 /***/ }),
